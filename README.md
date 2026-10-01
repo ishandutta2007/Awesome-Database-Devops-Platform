@@ -1,213 +1,137 @@
-# Awesome-Database-Devops-Platform
+# Awesome Database DevOps Platform 🛠️
 
-## Top Database DevOps Platforms Ecosystem
+<p center align="center">
+  <img src="assets/banner.svg" alt="Awesome Database DevOps Banner" width="100%" />
+</p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Database-Devops-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Devops-Platform?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Database-Devops-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Database-Devops-Platform?style=social" alt="GitHub forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Database-Devops-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Database-Devops-Platform" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 📌 Top Database DevOps Platforms Ecosystem
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+**Curated List of SaaS Platforms & Open-Source GitHub Projects**
 
-*Focused on Schema Migration, Version Control, Database CI/CD & Release Automation*
+*Focused on Schema Migration, Version Control, Database CI/CD, Declarative Schema-as-Code & Release Automation*
 
 **Last updated: October 2026**
 
+---
 
+### 🚀 Overview & Key Categories
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Database DevOps**. These tools help DBAs, developers, and platform teams bring software engineering practices—version control, automated testing, CI/CD, and code review—to database schema changes and releases.
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Database DevOps**. These tools enable DBAs, backend developers, and platform teams to apply modern software engineering practices—version control, automated testing, continuous integration and delivery (CI/CD), security-as-code, and code review—to database schema changes and releases.
 
-
-
-**Examples** include Liquibase, Flyway, Redgate SQL Change Automation, Bytebase, Atlas, SchemaHero, DBmaestro, Sqitch, Prisma Migrate, Datical, ApexSQL DevOps, and Neon Branching (the category leaders).
-
-
-
-**Open-source emphasis**: Database DevOps has a **mature and production-proven open-source ecosystem**. **Liquibase** and **Flyway** remain the two dominant tools in the imperative camp, with Flyway favored for SQL-first simplicity and Liquibase for cross-database abstraction and explicit rollbacks . **Atlas** has emerged as the de facto standard for **declarative schema-as-code**, bringing Terraform-like workflows to database migrations . **Bytebase** is the only database CI/CD project in the CNCF Landscape, providing web-based review workflows . **Sqitch** offers a dependency-graph model that shines for large, complex migration sets . This section documents these production-grade solutions.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Redgate SQL Change Automation](https://www.red-gate.com/products/sql-development/sql-change-automation/)**
-
-  Enterprise database DevOps solution for SQL Server. Extends DevOps processes to databases with migration scripts, automated deployments, and CI/CD pipeline integration. **ReadyRoll was retired in June 2018** and replaced by SQL Change Automation . The current direction is migration to **Flyway Enterprise**, which is the successor to both SQL Change Automation and the SQL Toolbelt .
-
-
-
-- **[Flyway Enterprise](https://www.red-gate.com/products/flyway/enterprise/)**
-
-  Commercial edition of Flyway (acquired by Redgate in 2024). Adds **Undo script generation** for rollbacks, **drift detection**, **object-level versioning**, and **custom code analysis** for SQL Server, PostgreSQL, Oracle, and MySQL . Over **200,000+ people** use Redgate's database DevOps tools, and **of the Fortune 100** use their products .
-
-
-
-- **[Liquibase Secure](https://www.liquibase.com/)**
-
-  Commercial edition of Liquibase (formerly Datical DB). Adds **policy checks** (dangerous pattern blocking), structured rollbacks, governance, and regulatory compliance mapping (SOX, PCI DSS, DORA) . The commercial version provides a **less geeky GUI** over the open-source version and role-based access support . Sold in Starter, Growth, Business, and Enterprise tiers.
-
-
-
-- **[Bytebase Cloud](https://bytebase.com/)**
-
-  Managed version of the open-source Bytebase platform. Provides database CI/CD with approval workflows, SQL review, data masking, and audit logging. Community edition free for up to 20 users and 10 instances; Pro **$20/user/month**; Enterprise custom .
-
-
-
-- **[DBmaestro](https://www.dbmaestro.com/)**
-
-  **State-based database release automation platform.** Supports Oracle, SQL Server, DB2, MySQL, MariaDB, and PostgreSQL . Unlike migration-based tools, DBmaestro checks the database state **before and after** the update, detects deviations from the version-controlled state, and can adapt the update automatically or warn developers . Tagline: "Automate and govern database releases to accelerate time-to-market while preventing downtime and data loss" .
-
-
-
-- **[ApexSQL DevOps](https://www.apexsql.com/)**
-
-  Database DevOps toolkit for SQL Server. Provides schema and data comparison, source control integration, and automated deployment capabilities.
-
-
-
-- **[Neon Branching](https://neon.com/)**
-
-  **Copy-on-write database branching for Postgres.** Branches are pointers—no data copied at creation, only diverged writes stored separately . Instant branching regardless of database size. **Free tier**: 10 branches/project, 0.5 GB storage. **Launch**: extra branches $1.50/branch-month .
-
-
-
-- **[PlanetScale](https://planetscale.com/)**
-
-  **Database branching for MySQL, built on Vitess.** Each branch is a full database clone created in roughly one second . **Deploy requests** generate schema diffs for team review—like pull requests for database changes. **Data Branching®** creates branches with both schema and data from the latest backup. Proven scalability with zero-downtime schema changes .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Imperative Migration Frameworks
-
-
-
-- **[Flyway](https://github.com/flyway/flyway)**
-
-  **The developer-friendly SQL-first migration tool.** **Apache-2.0 licensed** (Community edition), Java-based. Uses **versioned SQL scripts** (`V{version}__{description}.sql`) applied in order, tracked by a `flyway_schema_history` table . **Key features**: **50+ database support** including Oracle, SQL Server, MySQL, PostgreSQL, Snowflake, and BigQuery; Spring Boot integration with single property update ; **callback hooks** for lifecycle events; baseline for introducing Flyway to existing databases . **Target audience**: Developer-first teams wanting minimal setup and predictable execution. **Tradeoff**: Automatic rollback and schema diff are commercial (paid) features; no declarative mode .
-
-
-
-- **[Liquibase](https://github.com/liquibase/liquibase)**
-
-  **The cross-database abstraction tool.** **Apache-2.0 licensed**, Java-based. Uses a **changelog** concept with **changesets** written in SQL, XML, YAML, or JSON . **Key features**: Database-agnostic changelogs supporting **60+ databases**; **standardized rollbacks** (first-class OSS feature); preconditions, tagging, and drift detection ; integrations with Maven, Ant, Gradle, Spring Boot, and CI/CD tools . **Target audience**: Enterprise and regulated environments needing governance and broad database coverage. **Tradeoff**: XML/YAML changelog format is verbose compared to plain SQL; abstraction can generate suboptimal SQL for large tables .
-
-
-
-- **[Sqitch](https://github.com/sqitchers/sqitch)**
-
-  **The dependency-graph-based migration tool.** Created by David Wheeler in 2012, "Git-like migrations" . **Model**: Each change has a name; `sqitch add appchanges` generates three files (deploy, revert, verify SQL). Dependencies are explicit in `sqitch.plan` . **Key features**: **Dependency resolution** (no version numbers, no collisions in multi-branch environments); **verify is first-class** (distinguishes "migration applied" from "actually works"); **DB-neutral** (Postgres, MySQL, Oracle, SQLite, Snowflake, Firebird, Vertica, Exasol) . **Target audience**: Monolith DBs with 1000+ migrations; teams with frequent version-number collisions. **Tradeoff**: Learning curve (different mental model); smaller community; CLI-only (no GUI); Perl dependency . **Note**: Windows/Linux line-ending differences can cause `script_hash` mismatches .
-
-
-
-### Declarative Schema-as-Code
-
-
-
-- **[Atlas](https://github.com/ariga/atlas)**
-
-  **The de facto standard for declarative schema-as-code.** **Apache-2.0 licensed**, Go-based. Started in 2022 and grew quickly in 2024-2025 . **Two modes**: **Declarative** (`atlas schema apply` — diff and apply directly) and **Versioned** (`atlas migrate diff` — write diff as SQL file, apply later; recommended for production) . **Key features**: **Schema as Code** (HCL, SQL, or ORM — 16 ORM loaders across 6 languages) ; **50+ safety analyzers** detecting destructive changes, data-dependent modifications, table locks, and backward-incompatible changes ; **Security-as-Code** for roles and permissions ; **cloud-native CI/CD** (Kubernetes operator, Terraform provider, GitHub Actions, GitLab CI, ArgoCD) ; **drift detection** with automatic remediation . **Target audience**: New Go backends; teams comfortable with IaC like Terraform; multi-DB environments . **Tradeoff**: Declarative model may handle column rename as drop+add (can be hinted with `--diff-policy`) ; zero-downtime expand-contract not directly supported ; gap between free and paid (Atlas Cloud, Pro) is large .
-
-
-
-### Database DevOps Platforms
-
-
-
-- **[Bytebase](https://github.com/bytebase/bytebase)**
-
-  **The only database CI/CD project in the CNCF Landscape.** **Apache-2.0 licensed**, Go and TypeScript-based . **Web-based collaboration workspace** for DBAs and developers — "GitLab/GitHub for DBs" . **Key features**: **GitOps integration** for database-as-code workflows; **200+ SQL lint rules** (Squawk-style); **approval workflows** with DBA review; **staged auto-deploy** (dev → staging → prod); **schema drift detection** with alerts; **data masking** and **access control** . **Supported databases**: 50+ including PostgreSQL, MySQL, MongoDB, Redis, Snowflake, Oracle, SQL Server . **Community edition**: Free for up to 20 users and 10 instances; Pro $20/user/month . **Target audience**: Teams needing a platform with governance and audit trails.
-
-
-
-- **[SchemaHero](https://github.com/schemahero/schemahero)**
-
-  **Kubernetes operator for declarative database schema management.** **Apache-2.0 licensed**, Go-based. **Key concept**: Database table schemas are expressed as **Kubernetes resources** deployed to the cluster; SchemaHero calculates the required `ALTER TABLE` statement and applies it. Manages databases deployed in the cluster or external (RDS, Google CloudSQL). **Target audience**: Kubernetes-native teams wanting GitOps for database schemas.
-
-
-
-### ORM-Integrated Migrations
-
-
-
-- **[Prisma Migrate](https://github.com/prisma/prisma)**
-
-  **Hybrid declarative/imperative migration tool integrated with Prisma ORM.** **Apache-2.0 licensed**, TypeScript-based. **How it works**: Data model described declaratively in Prisma schema; Prisma generates SQL migration files; generated SQL is fully customizable. **Key features**: Migration history of `.sql` files; shadow database for development; works in development and production. **Note**: For MongoDB, use `db push` instead of `migrate dev`. **Target audience**: Teams already using Prisma ORM for application development.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Imperative Migration**: **Flyway** (SQL-first, 50+ DBs), **Liquibase** (cross-DB abstraction, explicit rollbacks), **Sqitch** (dependency graph, verify first-class) .
-
-- **Declarative Schema**: **Atlas** (HCL/SQL/ORM, 50+ analyzers), **SchemaHero** (Kubernetes operator), **Skeema** (MySQL/MariaDB, pure SQL, used by GitHub) .
-
-- **ORM-Integrated**: **Prisma Migrate** (TypeScript, hybrid), **DbUp** (.NET, simple) .
-
-- **Language-Specific**: **golang-migrate** (Go), **Alembic** (Python/SQLAlchemy), **Rails ActiveRecord Migrations** (Ruby), **Drizzle Kit** (TypeScript, declarative) .
-
-
-
-**Frameworks for building custom systems**: Combine **Flyway** for simple SQL-first migrations, **Liquibase** for database-agnostic changelogs with rollback support, **Atlas** for declarative Terraform-style schema management with linting and Security-as-Code, **Bytebase** for team collaboration with approval workflows and audit trails, and **SchemaHero** for Kubernetes-native GitOps. Add **PostgreSQL** for metadata persistence and **Docker** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Database DevOps platforms handle sensitive production schemas and data; ensure proper access controls and compliance with change management policies.
-
-- **Open-source reality**: The open-source ecosystem for database DevOps is **mature and production-proven**. **Flyway** and **Liquibase** remain the two dominant imperative tools, each with broad database support and active communities . **Atlas** has emerged as the de facto standard for declarative schema-as-code, with 50+ safety analyzers and Security-as-Code . **Bytebase** is the only database CI/CD project in the CNCF Landscape, providing web-based governance . **Sqitch** offers a unique dependency-graph model ideal for large migration sets . However, **commercial editions** (Flyway Enterprise, Liquibase Secure, Redgate SQL Change Automation) provide **regulatory compliance mapping, structured rollbacks, and enterprise support** that open-source editions require additional tooling to match . The open-source path is **genuinely viable** for most teams, with the choice driven by workflow preference (SQL-first vs. changelog vs. declarative vs. dependency-graph) and governance requirements.
-
-
+Key industry examples include **Liquibase**, **Flyway**, **Redgate SQL Change Automation**, **Bytebase**, **Atlas**, **SchemaHero**, **DBmaestro**, **Sqitch**, **Prisma Migrate**, **Drizzle Kit**, **golang-migrate**, **gh-ost**, and **Neon Branching**.
 
 ---
 
+## 💡 Market Insights & Industry Overview
 
+> 📊 **Estimated Market Size**: The global Database DevOps and Schema Change Management market is estimated at **$1.8 Billion – $2.5 Billion (2025/2026)** with an annual growth rate (CAGR) of over 18%. 
+> 
+> 🧩 **Market Fragmentation**: The sector is **moderately fragmented**. Legacy enterprise database platforms (e.g., Redgate, Liquibase, DBmaestro) dominate traditional SQL Server and Oracle environments, while agile serverless cloud database platforms (Neon, PlanetScale) and open-source declarative schema-as-code frameworks (Atlas, Bytebase, Prisma) are rapidly consolidating developer-centric GitOps workflows.
 
-**Made for database engineers, DevOps teams, DBAs, and platform engineers.**
+---
 
-Let's make database DevOps more open, transparent, and reliable.
+## ☁️ SaaS / Hosted Platforms
+
+Below is a curated summary of enterprise SaaS platforms offering managed database release automation, branching, and CI/CD pipelines, sorted by company revenue/valuation in descending order.
+
+| Platform 🛠️ | Scale / Valuation 💰 | Starting Price 🏷️ | Free Tier / Trial Limit 🎁 | Core Capabilities & Overview ℹ️ |
+| :--- | :--- | :--- | :--- | :--- |
+| **[PlanetScale](https://planetscale.com/)** | **$1.0 Billion** Valuation (Series D) | **$39/month** (Scalers Plan) | 14-day free trial on Scalers plan (includes MySQL Vitess branching & schema diffs) | MySQL database branching built on Vitess. Deploy requests generate schema diffs for team pull-request reviews with zero downtime. |
+| **[Neon Branching](https://neon.com/)** | **$1.0 Billion** Valuation (Acquired by Databricks) | **$19/month** (Launch Plan) | Free Forever: 0.5 GB storage, 10 branches per project, 1 project | Instant copy-on-write database branching for PostgreSQL. Branches are created instantly without copying base data. |
+| **[Redgate Flyway Enterprise](https://www.red-gate.com/products/flyway/enterprise/)** | **$100 Million+** Annual Recurring Revenue (ARR) | **$595/user/year** (Flyway Teams) | Free Community Edition (basic migrations); 28-day free enterprise trial | Enterprise-grade schema drift detection, automated undo script generation, policy checks, and object-level versioning. |
+| **[ApexSQL DevOps](https://www.apexsql.com/)** | **~$55 Million** ARR (Idera Inc.) | **$1,499/license** (ApexSQL Suite) | 14-day full feature free trial | SQL Server database DevOps toolkit for schema/data comparison, build automation, continuous integration, and script execution. |
+| **[DBmaestro](https://www.dbmaestro.com/)** | **$9.5 Million** Total Funding Raised | **$3,000/year** (Starting per pipeline target) | 14-day free trial | State-based database release automation checking pre- and post-deployment schema state for Oracle, SQL Server, MySQL, and Postgres. |
+| **[Bytebase Cloud](https://bytebase.com/)** | **$3.0 Million** Seed Funding Raised | **$20/user/month** (Pro Plan) | Free Forever: up to 20 users and 10 database instances | Web-based database CI/CD platform (CNCF Landscape) with 200+ SQL lint rules, approval workflows, GitOps, and data masking. |
+| **[Liquibase Secure](https://www.liquibase.com/)** | Private Enterprise Tier | **$350/target DB/year** (Starter Tier) | Free Community Edition (Open Source); 30-day free trial | Enterprise compliance mapping (SOX, PCI DSS, DORA), automated policy checks, RBAC governance, and structured rollbacks. |
+
+---
+
+## ⚡ Open-Source GitHub Projects
+
+The open-source ecosystem for Database DevOps is mature, battle-tested, and rapidly expanding. Below are top open-source tools sorted by **GitHub Star Count (descending)**.
+
+- **[Prisma Migrate](https://github.com/prisma/prisma)** <a href="https://github.com/prisma/prisma/stargazers"><img src="https://img.shields.io/github/stars/prisma/prisma?style=social&color=white" alt="Prisma Stars"/></a> 🌟
+  Hybrid declarative/imperative migration engine built into Prisma ORM. Uses declarative `.prisma` schemas to generate versioned SQL migration scripts.
+  
+- **[Drizzle Kit](https://github.com/drizzle-team/drizzle-orm)** <a href="https://github.com/drizzle-team/drizzle-orm/stargazers"><img src="https://img.shields.io/github/stars/drizzle-team/drizzle-orm?style=social&color=white" alt="Drizzle Stars"/></a> 🌟
+  TypeScript-first declarative database migration tool and CLI for Drizzle ORM supporting PostgreSQL, MySQL, and SQLite.
+
+- **[golang-migrate](https://github.com/golang-migrate/migrate)** <a href="https://github.com/golang-migrate/migrate/stargazers"><img src="https://img.shields.io/github/stars/golang-migrate/migrate?style=social&color=white" alt="golang-migrate Stars"/></a> 🌟
+  CLI and Go library for imperative database migrations supporting 20+ driver targets (Postgres, MySQL, Redshift, Spanner, SQLite).
+
+- **[Bytebase](https://github.com/bytebase/bytebase)** <a href="https://github.com/bytebase/bytebase/stargazers"><img src="https://img.shields.io/github/stars/bytebase/bytebase?style=social&color=white" alt="Bytebase Stars"/></a> 🌟
+  The only database CI/CD project in the CNCF Landscape. Provides web-based GitOps schema collaboration, SQL linting, and role-based access control.
+
+- **[gh-ost](https://github.com/github/gh-ost)** <a href="https://github.com/github/gh-ost/stargazers"><img src="https://img.shields.io/github/stars/github/gh-ost?style=social&color=white" alt="gh-ost Stars"/></a> 🌟
+  GitHub's online, triggerless schema migration engine for MySQL that operates without locking tables or interrupting live traffic.
+
+- **[Flyway](https://github.com/flyway/flyway)** <a href="https://github.com/flyway/flyway/stargazers"><img src="https://img.shields.io/github/stars/flyway/flyway?style=social&color=white" alt="Flyway Stars"/></a> 🌟
+  The popular SQL-first imperative migration tool supporting 50+ database systems. Uses versioned SQL files (`V1__init.sql`) and history tracking tables.
+
+- **[Atlas](https://github.com/ariga/atlas)** <a href="https://github.com/ariga/atlas/stargazers"><img src="https://img.shields.io/github/stars/ariga/atlas?style=social&color=white" alt="Atlas Stars"/></a> 🌟
+  Declarative schema-as-code tool bringing Terraform-like workflows to database management with HCL/SQL schemas, 50+ safety lint analyzers, and drift detection.
+
+- **[Liquibase](https://github.com/liquibase/liquibase)** <a href="https://github.com/liquibase/liquibase/stargazers"><img src="https://img.shields.io/github/stars/liquibase/liquibase?style=social&color=white" alt="Liquibase Stars"/></a> 🌟
+  Cross-database abstraction migration framework. Supports changelogs written in SQL, XML, YAML, or JSON with built-in rollback execution and 60+ database drivers.
+
+- **[Sqldef](https://github.com/k0kubun/sqldef)** <a href="https://github.com/k0kubun/sqldef/stargazers"><img src="https://img.shields.io/github/stars/k0kubun/sqldef?style=social&color=white" alt="Sqldef Stars"/></a> 🌟
+  Idempotent declarative schema management CLI tool for MySQL, PostgreSQL, SQLite, and SQL Server using plain `CREATE TABLE` definitions.
+
+- **[Sqitch](https://github.com/sqitchers/sqitch)** <a href="https://github.com/sqitchers/sqitch/stargazers"><img src="https://img.shields.io/github/stars/sqitchers/sqitch?style=social&color=white" alt="Sqitch Stars"/></a> 🌟
+  VCS-centric dependency-graph migration framework without version numbers. Features explicit deploy, revert, and verify test scripts.
+
+- **[Reshape](https://github.com/fabianlindfors/reshape)** <a href="https://github.com/fabianlindfors/reshape/stargazers"><img src="https://img.shields.io/github/stars/fabianlindfors/reshape?style=social&color=white" alt="Reshape Stars"/></a> 🌟
+  An open-source database migration tool for Postgres that performs zero-downtime schema changes using automated views and dual-write patterns.
+
+- **[Skeema](https://github.com/skeema/skeema)** <a href="https://github.com/skeema/skeema/stargazers"><img src="https://img.shields.io/github/stars/skeema/skeema?style=social&color=white" alt="Skeema Stars"/></a> 🌟
+  Pure-SQL declarative schema management CLI for MySQL and MariaDB that integrates seamlessly with Git workflows.
+
+- **[SchemaHero](https://github.com/schemahero/schemahero)** <a href="https://github.com/schemahero/schemahero/stargazers"><img src="https://img.shields.io/github/stars/schemahero/schemahero?style=social&color=white" alt="SchemaHero Stars"/></a> 🌟
+  Kubernetes-native operator that declarative converts custom resource definitions (CRDs) into table schemas and executes automated `ALTER TABLE` migrations.
+
+---
+
+## 🤝 How to Contribute
+
+1. 🍴 Fork this repository.
+2. ✍️ Add or update entries in `README.md` maintaining standard formatting.
+3. 📝 Ensure accuracy for product descriptions, licensing, and pricing.
+4. 📬 Submit a Pull Request (PR) with a brief summary of additions.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Database-Devops-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Database-Devops-Platform&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you for exploring and contributing to the **Awesome Database DevOps Platform** ecosystem! 
+
+If you find this repository helpful:
+- ⭐ **Star** this repository to show your appreciation!
+- 🔀 **Fork** it to keep your own reference copy.
+- 📢 **Share** it with fellow DBAs, DevOps engineers, and developers.
+
+<a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Sponsor-Buy%20me%20a%20coffee-ff69b4?style=for-the-badge&logo=github" alt="Sponsor"/></a>
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is community-curated for informational purposes and does not constitute official vendor endorsement.
+- Always verify schema scripts and security compliance before applying changes in production environments.
+
+---
+
+**Made with ❤️ for Database Engineers, Platform Teams, and DevOps Practitioners worldwide.**
