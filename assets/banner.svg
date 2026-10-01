@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Animated Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.3"/>
+    </pattern>
+
+    <style>
+      .glow-pulse {
+        animation: pulse 4s ease-in-out infinite alternate;
+      }
+      .float-node {
+        animation: float 6s ease-in-out infinite alternate;
+      }
+      .dash-flow {
+        stroke-dasharray: 8 8;
+        animation: dash 20s linear infinite;
+      }
+      @keyframes pulse {
+        0% { opacity: 0.3; transform: scale(0.98); }
+        100% { opacity: 0.7; transform: scale(1.02); }
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-10px); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -1000; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="360" fill="url(#bg-grad)" rx="16"/>
+  <rect width="1200" height="360" fill="url(#grid)" rx="16"/>
+
+  <!-- Background Dynamic Elements (Behind Text) -->
+  <g opacity="0.4" class="glow-pulse">
+    <circle cx="200" cy="180" r="140" fill="#3b82f6" filter="blur(60px)" opacity="0.25"/>
+    <circle cx="1000" cy="180" r="140" fill="#8b5cf6" filter="blur(60px)" opacity="0.25"/>
+  </g>
+
+  <!-- Animated Dynamic Pipeline Graphics in Background Sides -->
+  <!-- Left Side Graphic: Database & DevOps Nodes -->
+  <g stroke="#38bdf8" stroke-width="1.5" fill="none" opacity="0.3" class="dash-flow">
+    <path d="M 50 80 Q 150 120 120 220 T 250 280" />
+    <path d="M 80 300 Q 180 200 100 100 T 220 50" />
+  </g>
+
+  <g class="float-node" opacity="0.4">
+    <!-- DB Node Left -->
+    <rect x="70" y="140" width="90" height="34" rx="17" fill="#1e293b" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="115" y="162" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ Migration</text>
+
+    <!-- Schema Node Right -->
+    <rect x="1030" y="180" width="100" height="34" rx="17" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="1080" y="202" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🚀 CI/CD Pipeline</text>
+  </g>
+
+  <!-- Right Side Graphic: Database Wave Flow -->
+  <g stroke="#818cf8" stroke-width="1.5" fill="none" opacity="0.3" class="dash-flow">
+    <path d="M 950 70 Q 1050 150 980 250 T 1150 300" />
+  </g>
+
+  <!-- FOREGROUND LAYER: Content strictly readable above background graphics -->
+  <!-- Top Badge / Pill -->
+  <g transform="translate(600, 75)">
+    <rect x="-140" y="-18" width="280" height="34" rx="17" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="0" y="4" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" text-anchor="middle">CURATED ECOSYSTEM DIRECTORY</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="160" fill="url(#text-grad)" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5" text-anchor="middle" filter="drop-shadow(0px 4px 12px rgba(0,0,0,0.5))">
+    Awesome Database DevOps Platform 🛠️
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="212" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="500" text-anchor="middle">
+    Schema Migration • Version Control • Database CI/CD • Release Automation
+  </text>
+
+  <!-- Feature Pills -->
+  <g transform="translate(600, 275)">
+    <!-- Pill 1 -->
+    <g transform="translate(-230, 0)">
+      <rect x="-75" y="-16" width="150" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="0" y="5" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">☁️ SaaS Platforms</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(0, 0)">
+      <rect x="-85" y="-16" width="170" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="0" y="5" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">⚡ Open-Source Tools</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(230, 0)">
+      <rect x="-75" y="-16" width="150" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="0" y="5" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">🔄 GitOps Workflow</text>
+    </g>
+  </g>
+</svg>
