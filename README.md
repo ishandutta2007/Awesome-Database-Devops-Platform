@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Database-Devops-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Devops-Platform?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Database-Devops-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Database-Devops-Platform?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Database-Devops-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Database-Devops-Platform?style=social" alt="GitHub forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Database-Devops-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Database-Devops-Platform" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -56,7 +56,7 @@ Below is a curated summary of enterprise SaaS platforms offering managed databas
 
 ## ⚡ Open-Source GitHub Projects
 
-The open-source ecosystem for Database DevOps is mature, battle-tested, and rapidly expanding. Below are top open-source tools sorted by **GitHub Star Count (descending)**.
+The open-source ecosystem for Database DevOps is mature, battle-tested, and rapidly expanding. Below are top open-source tools sorted by **GitHub Stars_Count (descending)**.
 
 - **[Prisma Migrate](https://github.com/prisma/prisma)** <a href="https://github.com/prisma/prisma/stargazers"><img src="https://img.shields.io/github/stars/prisma/prisma?style=social&color=white" alt="Prisma Stars"/></a> 🌟
   Hybrid declarative/imperative migration engine built into Prisma ORM. Uses declarative `.prisma` schemas to generate versioned SQL migration scripts.
@@ -135,3 +135,12 @@ If you find this repository helpful:
 ---
 
 **Made with ❤️ for Database Engineers, Platform Teams, and DevOps Practitioners worldwide.**
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Database-Devops-Platform&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Database-Devops-Platform_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Database-Devops-Platform_growth.svg">
+  </picture>
+</a>
